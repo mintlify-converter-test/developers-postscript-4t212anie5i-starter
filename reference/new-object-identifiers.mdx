@@ -1,0 +1,11 @@
+---
+title: "New Object Identifiers"
+---
+We've made some changes to the way we do object identifiers in the v2 version of our API. Whenever you get back a successful response from us that contains an object in it, we will return our new identifiers (`id`) in the response. Please use these identifiers for all your requests using the v2 API endpoints and beyond.
+
+We will still support you sending us the old identifiers in your requests for a period of time but you should change to our new identifiers ASAP. The way we used to do identifiers has the risk of breaking your application if a shop deletes their API keys. In order to avoid this scenario, you should update the identifiers you use as soon as you can.
+
+All of our new identifiers adopt a new convention where we use a prefix at the beginning of them to match the object they identify. For example, all subscriber ids will include a `s_` prefix for their ids. This is how you can spot whether or not you are using these new ids or our old ids, whether or not they have a prefix at the beginning of it.
+
+
+
