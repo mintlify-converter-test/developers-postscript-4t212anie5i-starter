@@ -1,0 +1,27 @@
+---
+title: "Type of Events"
+---
+This is a list of all the types of events we currently send. We may add more at any time, so in developing and maintaining your code, you should not assume that only these types exist.
+
+You'll notice that these events follow a pattern: `resource.event`. Our goal is to design a consistent system that makes things easier to anticipate and code against. Events occurring on subresources have a nested structure, like: `resource.subresource.event`.
+
+## Events
+
+`shop.incoming_message`
+
+*   Occurs whenever a shop gets an inbound text message sent to it. Note: some messages (like keywords, subscriber lifecycle events, etc) may not come through, but an otherwise regular message to a shop will.
+
+`shop.subscriber.opt_in`
+
+*   Occurs whenever a subscriber for a shop is opted in for promotional text messages. This can happen in different ways, but the most common is a subscriber sending back a confirmation opt in text.
+
+`shop.subscriber.opt_out`
+
+*   Occurs whenever a subscriber for a shop is opted out from receiving texts from a shop.
+
+`shop.email_collected`
+
+*   Occurs whenever an email is collected via Postscript popups.
+
+
+
