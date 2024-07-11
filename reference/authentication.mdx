@@ -1,0 +1,12 @@
+---
+title: "Authentication"
+---
+To authenticate with our API, you'll need to use Authorization headers.
+
+Both Shops and Partners are given API keys to authenticate with our API. For **Partners**, you'll use your API token in the `Authorization` header and an individual Shop's API token in the `X-Postscript-Shop-Token` header (if making API calls that require a Shop's authorization). For **Shops**, you'll just use your API token in the `Authorization` header. This will allow you to perform API calls on your shop's behalf. It does not require you to have a Partner API Token too. Both Shops and Partners should use your API **Private Key** in the requests and not your Public Key.
+
+For more on Authentication, check out [our Authentication guide](/docs/api-authentication)
+.
+
+
+
